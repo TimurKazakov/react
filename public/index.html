@@ -24,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Quiz App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +39,31 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyA1VV4b43OKE_xe9yiE-c7wn8Cdfh_8OUg",
+        authDomain: "quiz-b268b.firebaseapp.com",
+        databaseURL: "https://quiz-b268b.firebaseio.com",
+        projectId: "quiz-b268b",
+        storageBucket: "quiz-b268b.appspot.com",
+        messagingSenderId: "42403008469",
+        appId: "1:42403008469:web:af93fb8e0d9a4da540775c",
+        measurementId: "G-TM7YS1CM2R"
+      };
+      // Initialize Firebase
+
+
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+    </script>
   </body>
 </html>
